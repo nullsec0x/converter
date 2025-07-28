@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/nullsec0x/converter.git
     cd binary-hex-converter
     ```
 
@@ -42,32 +42,6 @@ To run this project locally, follow these steps:
     ```
 
     The application will be accessible at `http://localhost:5173` (or another port if 5173 is in use).
-
-## Deployment on GitHub Pages
-
-To deploy this application to GitHub Pages, you can use `gh-pages` package. Follow these steps:
-
-1.  **Install `gh-pages`:**
-    ```bash
-    npm install --save-dev gh-pages
-    # or if you use pnpm
-    pnpm install --save-dev gh-pages
-    ```
-
-2.  **Add deployment scripts to `package.json`:**
-    Open your `package.json` file and add the following scripts:
-    ```json
-    "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist",
-      "dev": "vite",
-      "build": "vite build",
-      "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-      "preview": "vite preview"
-    },
-    "homepage": "https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>/"
-    ```
-    Replace `<YOUR_GITHUB_USERNAME>` and `<YOUR_REPOSITORY_NAME>` with your actual GitHub username and repository name.
 
 3.  **Deploy the application:**
     ```bash
